@@ -55,6 +55,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-link " href="https://twitter.com/vijay_aleti1">Twitter</a>
+          <a class="nav-link " href="https://www.linkedin.com/in/vijay-aleti-163970126/">Linkedin</a>
           <a class="nav-link" href="{% static 'Vijay New Resume Updated.pdf'%}">Resume</a>
           <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
 
@@ -83,7 +84,7 @@
         {% for job in jobs.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <svg class="card-img-top" src="{{ job.images.url}}"/>
+            <img class="card-img-top" src="{{ job.image.url }}"/>
             <div class="card-body">
               <p class="card-text">{{ job.summary }}</p>
             </div>
